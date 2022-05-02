@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 column preview card</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+    
+    <!-- ### Primary
+    Bright orange: hsl(31, 77%, 52%)
+    Dark cyan: hsl(184, 100%, 22%)
+    Very dark cyan: hsl(179, 100%, 13%)
+
+    ### Neutral
+    Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+    Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+    
+    ##Fonts
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            max-height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex {
+            display: flex;
+        }
+        .mw-1000 {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card-size {
+            width: 800px; 
+            height: 440px;
+        }
+        .margins {
+            margin-top: 100px;
+        }
+        #sedans {
+            background-color: hsl(31, 77%, 52%) ;
+            padding: 40px;
+        }
+        #suvs {
+            background-color: hsl(184, 100%, 22%);
+            padding: 40px;
+        }
+        #luxury {
+            background-color: hsl(179, 100%, 13%);
+            padding: 40px;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-family: 'Big Shoulders Display', cursive;
+            margin-bottom: 30px;
+        }
+        p {
+            font-family: 'Lexend Deca', sans-serif;
+            color: hsla(0, 0%, 100%, 0.75);
+            margin-bottom: 70px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        a {
+            font-family: 'Lexend Deca', sans-serif;
+            text-decoration: none;
+            color: hsl(179, 100%, 13%);
+            background-color: white;
+            border: 2px solid white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 13px;
+        }
+        a:hover {
+            background-color: transparent;
+            color: white;
+        }
+        .mg-lr {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        @media screen and (max-width: 440px) {
+            
+            .sm\:column {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div id="container" class="flex card-size margins sm:column mg-lr">
+
+        <div id="sedans">
+            <img src="icon-sedans.svg" alt="">
+            <h1>SEDANS</h1>
+            <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising on the city or your next road trip</p>
+            <a href="">Learn More</a>
+        </div>
+        <div id="suvs">
+            <img src="icon-suvs.svg" alt="">
+            <h1>SUVS</h1>
+            <p>Take an SUV for its spaciuos interior, power and versatility. Perfect for your next family vacation and off-road adventures</p>
+            <a href="">Learn More</a>
+        </div>
+        <div id="luxury">
+            <img src="icon-luxury.svg" alt="">
+            <h1>LUXURY</h1>
+            <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanched comfort of a luxury rental and arrive in style.</p>
+            <a href="">Learn More</a>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
